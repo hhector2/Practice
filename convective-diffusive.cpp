@@ -25,7 +25,7 @@ double error_eval(double u[partitionsX][partitionsY],double u_est[partitionsX][p
 	for (int i=1;i<partitionsX-1;i++) {
 				for (int j=1;j<partitionsY-1;j++) {
 					if(u[i][j]-u_est[i][j]<0){if(error<u_est[i][j]-u[i][j]){error=u_est[i][j]-u[i][j];}}
-					else{if(error<u[i][j]-u_est[i][j]){u[i][j]-u_est[i][j];}};
+					else{if(error<u[i][j]-u_est[i][j]){error=u[i][j]-u_est[i][j];}};
 				}
 			}
 	return error;
