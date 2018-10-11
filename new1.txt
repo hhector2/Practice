@@ -1,1 +1,9 @@
-hello2
+//hello2
+
+
+for (i=0;i<maxX;i++) {
+	(for j=0;j<maxY;j++) {
+	
+		u[i][j]=uo[i][j]+dif(neighbours[][])+conv(neighbours[i][j]);
+	}
+}
